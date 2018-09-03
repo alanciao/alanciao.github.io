@@ -1,0 +1,24 @@
+<header id="header">
+	<div class="h-container clear-fix">
+		<div class="logo pull-left">
+			<h3>
+				<a href="{{ site.baseurl }}/" title="{{ site.title }}">Alan's Blog</a>
+			</h3>
+		</div>
+
+		<h3 class="subtitle pull-left">- Learning, Drilling and Upgrading</h3>
+
+		<div class="nav-bar">
+
+			<a href="{{ site.baseurl }}/">Home</a>
+
+			{% for page in site.pages %}
+
+				<a href="{{ page.url }}">{{ page.title }}</a>
+
+			{% endfor %}
+
+		</div>
+		
+	</div>
+</header>
