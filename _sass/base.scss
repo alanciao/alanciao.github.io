@@ -21,4 +21,51 @@ h6 {
 
 body {
 	background: no-repeat url('../img/bg.jpg') top left fixed #fff;
+	font-size: 15px;
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: $theme-color;
+}
+
+img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+article {
+	text-align: justify;
+
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5,
+	h6 {
+		margin: 10px 0;
+	}
+}
+.article-title {
+	font-size: 2em;
+  margin: 0 0 10px;
+  font-family: sans-serif;
+  color: $theme-color;
+}
+.article-date {
+	color: #777;
+	display: inline-block;
+	margin: 10px 0 20px;
+}
+
+blockquote {
+	font-size: .9em;
+	background: rgba(200, 200, 200, .5);
+	color: #777;
+	text-align: left;
+}
+
+

@@ -9,6 +9,8 @@ github_username:  alanciao
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 theme: minima
 plugins:
   - jekyll-feed

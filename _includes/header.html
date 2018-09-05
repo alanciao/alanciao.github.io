@@ -10,11 +10,19 @@
 
 		<div class="nav-bar">
 
-			<a href="{{ site.baseurl }}/">Home</a>
+			<a href="{{ site.baseurl }}/" class="home">Home</a>
 
 			{% for page in site.pages %}
 
-				<a href="{{ page.url }}">{{ page.title }}</a>
+			  {% if page.title == 'About' %}
+
+				<a href="{{ page.url }}" class="about">{{ page.title }}</a>
+
+				{% else if page.title == '' %}
+
+				<a href="{{ page.url }}" class="other">{{ page.title }}</a>
+
+				{% endif %}
 
 			{% endfor %}
 

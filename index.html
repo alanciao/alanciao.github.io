@@ -8,11 +8,11 @@ layout: default
 		{% for post in site.posts %}
 
 			<div class="post">
-				<h2 class="title">
-					<a href="{{ post.url }}">{{ post.title }}</a>
+				<h2 class="article-title">
+					<a href="{{ post.url }}">{{ post.header }}</a>
 				</h2>
 				<div>
-					<time datetime="{{ post.date }}">{{ post.date }}</time>
+					<time datetime="{{ post.date }}" class="article-date">{{ post.date | date_to_string }}</time>
 				</div>
 				<article>
 					{{ post.excerpt | markdownify }}
