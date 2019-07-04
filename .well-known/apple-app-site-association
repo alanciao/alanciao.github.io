@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "R5A35URG47.cn.codemao.Nemo",
-                "paths": ["/nemo/player/detail/*"]
+                "paths": ["/nemo/player/*"]
             }
         ]
     }
